@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhythmic Tunes Music Player</title>
+  <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <div className="music-player">
+      <h2>{currentSong.title}</h2>
+      <h3>{currentSong.artist}</h3>
+      <audio id="audio" src={currentSong.src}>
+      <div className="controls">
+        <button onClick={handlePrevSong}>Prev</button>
+        <button onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
+        <button onClick={handleNextSong}>Next</button>
+      </div>
+    </div>
+  <div id="root"></div>
+  <script src="hi.jsx"></script>
+</body>
+</html>
+<div className="music-player">
+    <h2>{currentSong.title}</h2>
+    <h3>{currentSong.artist}</h3>
+    <audio id="audio" src={currentSong.src}>
+    <div className="controls">
+      <button onClick={handlePrevSong}>Prev</button>
+      <button onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
+      <button onClick={handleNextSong}>Next</button>
+    </div>
+  </div>
+<div id="root"></div>
+<script src="hi.jsx"></script>
